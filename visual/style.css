@@ -1,0 +1,92 @@
+/*
+Definir configurações:
+
+ext => {
+
+    Lado externo, abraça todos os outros componentes
+
+}
+
+int => {
+
+    Lado interno de visor, vai conter a parte visual do jogo
+
+}
+
+infT e infB => {
+
+    Lado superior e inferior contendo informações referentes ao jogo
+
+}
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ext {
+    display: flex;
+
+    flex-direction: column;
+
+    background-color: black;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.infT {
+    height: 10vh;
+}
+
+.int {
+    display: flex;
+
+    align-self: center;
+
+    background-color: rgb(71, 85, 80);
+
+    width: 98vw;
+    height: 70vh;
+}
+
+.tela {
+    display: flex;
+
+    margin: auto;
+
+    background-color: black;
+
+    width: 90vw;
+    height: 32vw;
+}
+
+@media (max-width: 900px) {
+    .tela {
+        height: 60vw;
+    }
+}
+
+@media (max-height:450px) and (max-width: 980px){
+    .tela {
+        width: 90vw;
+        height: 25vw;
+    }
+}
+
+
+.infB {
+
+    height: 20vh;
+}
+
+.infB, .infT {
+    display: flex;
+
+    background-color: rgb(83, 116, 104);
+
+    width: 100vw;
+    margin: auto;
+}
